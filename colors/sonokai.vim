@@ -53,7 +53,7 @@ else
 endif
 call sonokai#highlight('SignColumn', s:palette.fg, s:palette.none)
 call sonokai#highlight('IncSearch', s:palette.bg0, s:palette.bg_red)
-call sonokai#highlight('Search', s:palette.bg0, s:palette.bg_green)
+call sonokai#highlight('Search', s:palette.black, s:palette.bg_green)
 call sonokai#highlight('ColorColumn', s:palette.none, s:palette.bg1)
 call sonokai#highlight('Conceal', s:palette.grey_dim, s:palette.none)
 if s:configuration.cursor ==# 'auto'
@@ -69,8 +69,8 @@ if &diff
   call sonokai#highlight('CursorLine', s:palette.none, s:palette.none, 'underline')
   call sonokai#highlight('CursorColumn', s:palette.none, s:palette.none, 'bold')
 else
-  call sonokai#highlight('CursorLine', s:palette.none, s:palette.bg1)
-  call sonokai#highlight('CursorColumn', s:palette.none, s:palette.bg1)
+  call sonokai#highlight('CursorLine', s:palette.none, s:palette.black)
+  call sonokai#highlight('CursorColumn', s:palette.none, s:palette.black)
 endif
 call sonokai#highlight('LineNr', s:palette.grey_dim, s:palette.none)
 if &diff
@@ -116,11 +116,11 @@ call sonokai#highlight('TabLine', s:palette.fg, s:palette.bg4)
 call sonokai#highlight('TabLineFill', s:palette.grey, s:palette.bg1)
 call sonokai#highlight('TabLineSel', s:palette.bg0, s:palette.bg_red)
 call sonokai#highlight('VertSplit', s:palette.black, s:palette.none)
-call sonokai#highlight('Visual', s:palette.none, s:palette.bg3)
-call sonokai#highlight('VisualNOS', s:palette.none, s:palette.bg3, 'underline')
+call sonokai#highlight('Visual', s:palette.black, s:palette.purple)
+call sonokai#highlight('VisualNOS', s:palette.black, s:palette.purple, 'underline')
 call sonokai#highlight('QuickFixLine', s:palette.blue, s:palette.none, 'bold')
 call sonokai#highlight('Debug', s:palette.yellow, s:palette.none)
-call sonokai#highlight('debugPC', s:palette.bg0, s:palette.green)
+call sonokai#highlight('debugPC', s:palette.black, s:palette.green)
 call sonokai#highlight('debugBreakpoint', s:palette.bg0, s:palette.red)
 call sonokai#highlight('ToolbarButton', s:palette.bg0, s:palette.bg_blue)
 if has('nvim')
