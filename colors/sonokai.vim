@@ -78,10 +78,10 @@ if &diff
 else
   call sonokai#highlight('CursorLineNr', s:palette.fg, s:palette.none)
 endif
-call sonokai#highlight('DiffAdd', s:palette.none, s:palette.diff_green)
-call sonokai#highlight('DiffChange', s:palette.none, s:palette.diff_blue)
-call sonokai#highlight('DiffDelete', s:palette.none, s:palette.diff_red)
-call sonokai#highlight('DiffText', s:palette.bg0, s:palette.blue)
+call sonokai#highlight('DiffAdd', s:palette.green, s:palette.black)
+call sonokai#highlight('DiffChange', s:palette.yellow, s:palette.black)
+call sonokai#highlight('DiffDelete', s:palette.red, s:palette.black)
+call sonokai#highlight('DiffText', s:palette.blue, s:palette.black)
 call sonokai#highlight('Directory', s:palette.green, s:palette.none)
 call sonokai#highlight('ErrorMsg', s:palette.red, s:palette.none, 'bold,underline')
 call sonokai#highlight('WarningMsg', s:palette.yellow, s:palette.none, 'bold')
