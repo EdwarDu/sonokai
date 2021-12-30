@@ -58,8 +58,8 @@ function! sonokai#get_palette(style) "{{{
           \ }
   elseif a:style ==# 'shusia'
     let palette = {
-          \ 'black':      ['#1a181a',   '237'],
-          \ 'bg0':        ['#2d2a2e',   '235'],
+          \ 'black':      ['#000000',   '255'],
+          \ 'bg0':        ['#1a1a1a',   '235'],
           \ 'bg1':        ['#37343a',   '236'],
           \ 'bg2':        ['#3b383e',   '236'],
           \ 'bg3':        ['#423f46',   '237'],
