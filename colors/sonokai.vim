@@ -36,7 +36,7 @@ if s:configuration.transparent_background
   else
     call sonokai#highlight('EndOfBuffer', s:palette.bg0, s:palette.none)
   endif
-  call sonokai#highlight('Folded', s:palette.bg_green, s:palette.none)
+  call sonokai#highlight('Folded', s:palette.grey, s:palette.none)
   call sonokai#highlight('ToolbarLine', s:palette.fg, s:palette.none)
   call sonokai#highlight('FoldColumn', s:palette.grey_dim, s:palette.none)
 else
@@ -47,7 +47,7 @@ else
   else
     call sonokai#highlight('EndOfBuffer', s:palette.bg0, s:palette.bg0)
   endif
-  call sonokai#highlight('Folded', s:palette.bg_green, s:palette.bg1)
+  call sonokai#highlight('Folded', s:palette.grey, s:palette.bg1)
   call sonokai#highlight('ToolbarLine', s:palette.fg, s:palette.bg2)
   call sonokai#highlight('FoldColumn', s:palette.grey_dim, s:palette.none)
 endif
