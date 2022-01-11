@@ -78,14 +78,14 @@ let s:commandline_mid_bg = s:palette.bg1
 let s:commandline_mod_fg = s:palette.orange
 let s:commandline_mod_bg = s:palette.bg1
 
-let s:inactive_side_fg = s:palette.grey
-let s:inactive_side_bg = s:palette.bg1
-let s:inactive_sub_fg = s:palette.grey
-let s:inactive_sub_bg = s:palette.bg1
-let s:inactive_mid_fg = s:palette.grey
-let s:inactive_mid_bg = s:palette.bg1
-let s:inactive_mod_fg = s:palette.grey
-let s:inactive_mod_bg = s:palette.bg1
+let s:inactive_side_fg = s:palette.black
+let s:inactive_side_bg = s:palette.light_pink
+let s:inactive_sub_fg = s:palette.black
+let s:inactive_sub_bg = s:palette.light_pink
+let s:inactive_mid_fg = s:palette.black
+let s:inactive_mid_bg = s:palette.light_pink
+let s:inactive_mod_fg = s:palette.black
+let s:inactive_mod_bg = s:palette.light_pink
 "}}}
 " Implementation: {{{
 let g:airline#themes#sonokai#palette = {}
