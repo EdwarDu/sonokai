@@ -59,9 +59,9 @@ else
 endif
 call sonokai#highlight('SignColumn', s:palette.fg, s:palette.none)
 call sonokai#highlight('IncSearch', s:palette.bg0, s:palette.bg_red)
-call sonokai#highlight('Search', s:palette.bg0, s:palette.bg_green)
+call sonokai#highlight('Search', s:palette.black, s:palette.bg_green)
 highlight! link CurSearch IncSearch
-call sonokai#highlight('ColorColumn', s:palette.none, s:palette.bg1)
+call sonokai#highlight('ColorColumn', s:palette.none, s:palette.black)
 call sonokai#highlight('Conceal', s:palette.grey_dim, s:palette.none)
 if s:configuration.cursor ==# 'auto'
   call sonokai#highlight('Cursor', s:palette.none, s:palette.none, 'reverse')
@@ -76,8 +76,8 @@ if &diff
   call sonokai#highlight('CursorLine', s:palette.none, s:palette.none, 'underline')
   call sonokai#highlight('CursorColumn', s:palette.none, s:palette.none, 'bold')
 else
-  call sonokai#highlight('CursorLine', s:palette.none, s:palette.bg1)
-  call sonokai#highlight('CursorColumn', s:palette.none, s:palette.bg1)
+  call sonokai#highlight('CursorLine', s:palette.none, s:palette.black)
+  call sonokai#highlight('CursorColumn', s:palette.none, s:palette.black)
 endif
 call sonokai#highlight('LineNr', s:palette.grey_dim, s:palette.none)
 if &diff
@@ -85,10 +85,10 @@ if &diff
 else
   call sonokai#highlight('CursorLineNr', s:palette.fg, s:palette.none)
 endif
-call sonokai#highlight('DiffAdd', s:palette.none, s:palette.diff_green)
-call sonokai#highlight('DiffChange', s:palette.none, s:palette.diff_blue)
-call sonokai#highlight('DiffDelete', s:palette.none, s:palette.diff_red)
-call sonokai#highlight('DiffText', s:palette.bg0, s:palette.blue)
+call sonokai#highlight('DiffAdd', s:palette.green, s:palette.black)
+call sonokai#highlight('DiffChange', s:palette.yellow, s:palette.black)
+call sonokai#highlight('DiffDelete', s:palette.red, s:palette.black)
+call sonokai#highlight('DiffText', s:palette.blue, s:palette.black)
 call sonokai#highlight('Directory', s:palette.green, s:palette.none)
 call sonokai#highlight('ErrorMsg', s:palette.red, s:palette.none, 'bold,underline')
 call sonokai#highlight('WarningMsg', s:palette.yellow, s:palette.none, 'bold')
@@ -150,16 +150,16 @@ else
   call sonokai#highlight('TabLineSel', s:palette.bg0, s:palette.bg_red)
 endif
 if s:configuration.dim_inactive_windows
-  call sonokai#highlight('VertSplit', s:palette.bg4, s:palette.bg_dim)
+  call sonokai#highlight('VertSplit', s:palette.black, s:palette.bg_dim)
 else
   call sonokai#highlight('VertSplit', s:palette.black, s:palette.none)
 endif
 highlight! link WinSeparator VertSplit
-call sonokai#highlight('Visual', s:palette.none, s:palette.bg3)
-call sonokai#highlight('VisualNOS', s:palette.none, s:palette.bg3, 'underline')
+call sonokai#highlight('Visual', s:palette.black, s:palette.purple)
+call sonokai#highlight('VisualNOS', s:palette.black, s:palette.purple, 'underline')
 call sonokai#highlight('QuickFixLine', s:palette.blue, s:palette.none, 'bold')
 call sonokai#highlight('Debug', s:palette.yellow, s:palette.none)
-call sonokai#highlight('debugPC', s:palette.bg0, s:palette.green)
+call sonokai#highlight('debugPC', s:palette.none, s:palette.diff_blue, 'bold,italic')
 call sonokai#highlight('debugBreakpoint', s:palette.bg0, s:palette.red)
 call sonokai#highlight('ToolbarButton', s:palette.bg0, s:palette.bg_blue)
 if has('nvim')
